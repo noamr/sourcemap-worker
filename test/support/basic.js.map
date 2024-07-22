@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["basic.ts"],
+  "sourcesContent": ["export function abc() {\n    console.log(\"abc\");\n}\n\nexport function def() {\n    abc();\n}"],
+  "mappings": "AAAO,gBAAS,KAAM,CAClB,QAAQ,IAAI,KAAK,CACrB,CAEO,gBAAS,KAAM,CAClB,IAAI,CACR",
+  "names": []
+}

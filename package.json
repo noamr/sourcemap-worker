@@ -1,0 +1,22 @@
+{
+  "name": "sourcemap-worker",
+  "version": "1.0.0",
+  "description": "A client-side source-map resolver",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:mapper": "esbuild --outfile=./dist/browser/mapper.js --bundle --sourcemap --platform=browser --format=esm ./src/mapper.js",
+    "build:worker": "esbuild --outfile=./dist/browser/worker.js --bundle --sourcemap --platform=browser --format=esm ./src/worker.js",
+    "build:client": "esbuild --outfile=./dist/browser/client.js --bundle --sourcemap --platform=browser --format=esm ./src/client.js",
+    "build": "npm run build:mapper && npm run build:worker && npm run build:client"
+  },
+  "author": "Noam Rosenthal <nrosenthal@chromium.org>",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.23.0"
+  },
+  "dependencies": {
+    "source-map": "^0.7.4",
+    "source-map-js": "^1.2.0"
+  }
+}

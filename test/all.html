@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="module">
+            import {test_mapper} from "./mapper.test.js";
+            test_mapper();
+        </script>
+        <script type="module">
+            import {test_client, test_char_index} from "./client.test.js";
+            await test_client();
+            test_char_index();
+        </script>
+</html>
